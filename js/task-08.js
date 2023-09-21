@@ -6,15 +6,15 @@ loginForm.addEventListener("submit", handleSubmit)
         event.preventDefault()
     
 
-    const form = event.currentTarget
-        const login = form.elements.login.value;
+        const form = event.currentTarget;
+        const email = form.elements.email.value;
     const password = form.elements.password.value;
-    if (login === "" || password === "") {
+    if (email === "" || password === "") {
         return console.log("Будь ласка, заповніть всі поля форми.")
     }
     else {
-        console.log(`Login: ${login}, Password: ${password}`);
+        console.log(`Email: ${email.value}, Password: ${password.value}`);
     }
-        this.reset
+        form.reset
     }
 
