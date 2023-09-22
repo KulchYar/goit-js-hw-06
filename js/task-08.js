@@ -10,11 +10,11 @@ loginForm.addEventListener("submit", handleSubmit)
         const email = form.elements.email.value;
     const password = form.elements.password.value;
     if (email === "" || password === "") {
-        return console.log("Будь ласка, заповніть всі поля форми.")
+        alert ("Будь ласка, заповніть всі поля форми.")
     }
     else {
-        console.log(`Email: ${email.value}, Password: ${password.value}`);
+        console.log(`Email: ${email}, Password: ${password}`);
     }
-        form.reset
+        form.reset();
     }
 
