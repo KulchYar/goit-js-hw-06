@@ -13,8 +13,13 @@ loginForm.addEventListener("submit", handleSubmit)
         alert ("Будь ласка, заповніть всі поля форми.")
     }
     else {
-        console.log(`Email: ${email}, Password: ${password}`);
-    }
+         const formData = {
+            email: email,
+            password: password
+         };
+        console.log(formData);
         form.reset();
+    }
+        
     }
 
